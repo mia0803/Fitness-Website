@@ -1,0 +1,126 @@
+@charset "EUC-KR";
+
+html, body{
+	min-height: 100% !important;
+	background: url('../z-images/login_background.jpg');
+	font-family: Verdana, sans-serif;
+  	/* background-size: cover; */
+	height: 100%;
+	margin:0 !important;
+	padding: 0 !important;
+	font-size: 20px;
+	overflow: auto;
+	top:0;
+	border: 0;
+	outline: 0;
+	overflow: auto;
+}
+
+a{
+	height:20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #929292;
+	cursor: pointer;
+}
+
+a:hover{
+	color: #6c6c6c;
+}
+
+.button{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border:none;
+}
+
+.white-box{
+	min-height: 100% !important;
+	padding: 10px;
+	max-height: auto;
+	margin-top:0 !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:0;
+	padding: 0 !important;
+	background: white;
+	width: 60%;
+	
+}
+
+.big-size{
+	margin:auto;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+}
+
+input.big-size::-webkit-input-placeholder{
+	font-size: 20px;
+}
+
+
+.center-align{
+	text-align: center;
+}
+
+.thick-box{
+	display: relative;
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+}
+
+span{
+	position: absolute;
+	text-align:right;
+	right:2px;
+}
+
+.left-align{
+	text-align: left;
+}
+
+.center-align{
+	text-align: center;
+}
+
+
+
+.center-row-align{
+	display: flex;
+	justify-content: center;	
+}
+
+
+
+.large-top-margin{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.login-api p{
+	width: 300px;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px
+}
+
+
+.go-to-main{
+	cursor: pointer;
+}
+
+.grey{
+	color: #929292;
+	display: inline;
+	font-size: 15px;
+}
+
+
+

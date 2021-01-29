@@ -1,0 +1,332 @@
+@charset "EUC-KR";
+
+/* ------------ registration 3 -----------*/
+
+
+
+html, body{
+	font-family: Verdana, sans-serif;
+	width:100%;
+	margin: 0;
+	top:0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+
+input::-webkit-input-placeholder{
+	font-size:20px;
+}
+
+input {
+	margin:auto;
+	width: 100%;
+	font-size:20px;
+	height: 35px;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom: 2px solid grey;
+	background-color: #ffffff;
+}
+
+input:focus{
+	outline: none;
+}
+
+
+input.big-next-btn{
+	font-size: 20px;
+	width: 300px;
+	height: 50px;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	border:none;
+}
+
+input.big-next-btn:hover{
+	background-color: black;
+}
+
+.body-box{
+	display:flex;
+}
+
+.speech-bubble {
+	text-align: left;
+	display:none;
+	padding: 10px;
+	margin: 10px;
+	margin-top:520px;
+	margin-left:100px;
+	height:150px;
+	width:300px;
+	position: relative;
+	background: #cacaca;
+	border-radius: .4em;
+	font-size:15px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #cacaca;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.left-leaning{
+	margin: 10px;
+	padding: 10px;
+	width:500px;
+	margin-top: 150px;
+	margin-left: 15%;
+}
+
+.narrow-high-box{
+	width: 500px;
+	margin-bottom: 40px;
+}
+
+.narrow-high-box h1{
+	
+	font-size: 50px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.thick-top-margin{
+	padding: 5px;
+	width: 500px;
+	height: 80px;
+	margin-top:20px;
+}
+
+
+.row-align{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.some-margin{
+	margin-right:30px;
+}
+
+.normal-input{
+	margin-top: 10px;
+	font-size:15px;
+	height: 40px;
+}
+
+.small-box{
+	width: 400px;
+	color: #c0c0c0;
+	font-size:15px;
+}
+
+.long{
+	width: 100%;
+}
+
+
+.email-box{
+	width: 100%;
+}
+
+.email-box input#email{
+	width: 400px;
+}
+
+
+span#true{
+	color: red;
+}
+
+span#false{
+	color: green;
+}
+
+
+
+
+/*-------- registration 3 --------*/
+
+.small-underline{
+	text-decoration: underline;
+	font-size:15px;
+	cursor: pointer;
+}
+
+.black-banner{
+	border: 2px solid black;
+	background-color: black;
+	text-align: left;
+	margin-top:0;
+	color: white;
+	width: 100%;
+	height: 50px;
+}
+
+.vertical-center{
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	margin-left:10px;
+	cursor: pointer;
+}
+
+/*------------- modal box ------------*/
+.theModal *{
+	color: white;
+}
+
+.theModal{
+	display: none; 
+	position: fixed; 
+	z-index: 1;
+	top: 0;
+	right: 0;
+	width: 100%; 
+	height: 100%;
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content{
+	position: absolute;
+	background-color: #000000;
+	right: 0;
+	height: 100%;
+	overflow-x: scroll;
+	padding: 40px;
+	width: 40%;
+}
+
+
+.in-line{
+	display: inline;
+}
+
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #8080ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.large-box{
+	display: none;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 30px;
+	cursor: pointer;
+}
+
+.large-box:hover{
+	background: white;
+	color: black;
+}
+
+.large-box:hover > p{
+	color: black;
+}
+
+
+.underline-box{
+	border-bottom: 1px solid grey;
+	width: 70%;
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.underline-box input{
+	background: transparent;
+}
+
+.fa-search{
+	cursor: pointer;
+}
+
+.header{
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.narrow-box{
+	width:150px;
+	margin-bottom: 20px;
+}
+
+
+/* ------------ registration 2 page -------------*/
+.small-letter{
+	font-size: 12px;
+}
+
+.description{
+	font-size: 15px;
+	color: grey;
+	padding:0;
+}
+
+.big-box{
+	display: flex;
+	width: 800px;
+	align-items: center;
+}
+
+.short-box{
+	margin-right: 50px;
+	width: 70px;
+}
+
+.long-box{
+	width: 800px;
+	margin-right: 20px;
+}
+
+.like-p{
+	width: 200px;
+	border: none;
+}
+
+.go-back{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

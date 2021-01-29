@@ -1,0 +1,186 @@
+@charset "EUC-KR";
+
+html, body{
+	font-family: Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: table;
+	overflow-x: auto;
+	margin:0;
+	padding:0;
+}
+
+
+table {
+	display: inline-block;
+	position: relative;
+	border-collapse: collapse;
+	text-align: center;
+	border: 2px solid black;
+	
+	margin: auto;
+	margin: 20px;
+	margin-top:20px;
+}
+
+
+th {
+	height: 30px;
+	background: black;
+	color: white;
+}
+
+
+th, td {
+	padding: 10px;
+}
+
+
+tr:nth-child(even) {
+	background-color: white;
+}
+
+tr:nth-child(odd) {
+	background-color: lightgray;
+}
+
+tr:hover {
+	background-color: #808080;
+}
+
+
+button{
+	margin:5px;
+}
+
+.search-box{
+	width: 300px;
+	height: 30px;
+}
+
+.body-content{
+	text-align: center;
+	display: table;
+}
+
+.flex-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.align-right{
+	text-align: right;
+	margin-right: 20px;
+}
+
+
+.some-margin{
+	margin: 10px;
+	font-size: 30px;
+}
+
+
+/*---------- member schedule table -------------*/
+
+.horz-center-box{
+	text-align: center;
+	padding: 20px;
+	width: 500px;
+	margin: auto;
+}
+
+.modal-title{
+	text-align: center;
+	width: auto;
+}
+
+.bigger{
+	font-size: 20px;
+}
+
+.head-title{
+	margin: 10px;
+	text-align: left;
+}
+
+.head-days{
+	border-bottom: 2px solid grey;
+	width: auto;
+	padding-bottom:5px;
+	
+}
+
+.class-btn{
+	border-radius: 10px;
+	padding:5px;
+	cursor: pointer;
+	margin: 5px;
+	text-align:center;
+}
+
+.modal-body{
+	margin:0;
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+.class-btn:hover {
+	background-color: pink;
+}
+
+
+.clicked{
+	font-weight: bold;
+	background-color: pink;
+}
+
+.schedule-tr{
+	text-align: center;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+
+/*-------- timetable ------------*/
+.in-line{
+	display: inline;
+}
+
+.modal-title{
+	width: 500px;
+	margin: auto;
+}
+
+.longer-center{
+	width: 800px;
+}
+
+/*----------- admin manage club table page ------------*/
+.club-table{
+	table-layout: fixed;
+	width: 1500px;
+}
+
+.phone-row{
+	width: 150px;
+}
+
+.description-row{
+	width: 500px;
+}
+
+.address-row{
+	width: 200px;
+}
+
+.location-row{
+	width: 70px;
+}
+
+

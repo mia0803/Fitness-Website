@@ -1,0 +1,267 @@
+@charset "EUC-KR";
+
+/*----------------- qboard ---------------*/
+
+.qboard-table{
+	table-layout: fixed;
+	width: 1000px;
+}
+
+.number{
+	width: 50px;
+}
+
+.title{
+	width: 550px;
+}
+
+.writer{
+	width: 300px;
+}
+
+.date{
+	width: 50px;
+}
+
+.view{
+	width: 50px;
+}
+
+
+/*------------- pagination ----------------*/
+
+a{
+	padding: 5px;
+	text-align: center;
+}
+
+.selected{
+	background: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;
+	color: white;
+}
+
+.not-clickable{
+	color: grey;
+}
+
+.not-clickable:hover{
+	color: grey;
+	cursor: default;
+}
+
+
+
+
+/*----------- edit post ----------*/
+[readonly] {
+   pointer-events: none;
+}
+
+textarea {
+        width: 200px;
+        height: 200px;
+        resize: none; 
+}
+
+.lock{
+	pointer-events: none;
+}
+
+.narrow-body-box{
+	width: 1200px;
+	margin: auto;
+	margin-top:10px;
+}
+
+.post-content-box input, textarea{
+	width: 70%;
+}
+
+
+.post-title{
+	font-weight: bold;
+	width: 200px;
+	padding: 5px;
+	line-height: 1.9;
+	text-align: right;
+}
+
+.post-contents{
+	text-align: left;
+	width: 100%;
+	padding: 20px;
+}
+
+
+.post-content-box{
+	width: 60%;
+	margin: auto;
+}
+
+.btn-box{
+	width: 100%;
+	padding-left: 50px;
+}
+
+.btn-box-some-padding{
+	width: 100%;
+	padding:10px;
+	padding-left: 90px;
+}
+
+input.post-btn{
+	text-align: center;
+	width: 90px;
+}
+
+
+/*------------- end of the post area ----------*/
+
+
+
+/* ----------------- comment area ----------------*/
+
+/* writing new comment */
+
+.comment-box{
+	text-align: left;
+	margin: auto;
+	width: 1000px;;
+}
+.write-comment{
+	border-bottom: 2px solid grey;
+	margin-bottom: 20px;
+	padding-bottom:10px;
+}
+
+.comment-box2{
+	padding: 0;
+	margin: 20px;
+}
+
+.left-box{
+	margin:0;
+	padding:0;
+	width: 500px;
+}
+
+.right-box{
+	width: 100%;
+}
+
+
+.left-box1{
+	margin:0;
+	padding:0;
+	width: 500px;
+	text-align: right;
+}
+
+.right-box1{
+	width: 800px;
+}
+
+
+.comment-disiplay-box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
+}
+
+.comment-display-length{
+	margin-right: 10px;
+	width: auto;
+	max-width: 900px;
+}
+
+
+.bold{
+	font-weight: bold;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.bottom{
+	bottom:0;
+}
+
+.comment-content{
+	width: 400px;
+}
+
+
+/* comments & reply history */
+
+.reply-history-box{
+	margin:0;
+	padding:0;
+}
+
+.top-align{
+	align-items: flex-start;
+}
+
+
+.reply-history-box{
+	display: flex;
+}
+
+.reply-box{
+	display: none;
+}
+
+.reply-left-box{
+	padding:0;
+	width: auto;
+	margin-left:30px;
+}
+
+.reply-right-box{
+	margin-left:30px;
+	width: 100%;
+}
+
+.reply-left-box1{
+	height:auto;
+	padding:0;
+	width: auto;
+	margin-left:30px;
+}
+
+
+.row-align{
+	display: flex;
+}
+
+.row-align-center{
+	display: flex;
+	align-items: center;
+}
+
+
+/*------------ write post ----------------*/
+
+.full-box{
+	width: 600px;
+}
+
+.full-box input{
+	width: 60px;
+}
+
+
+
+
+
+
+

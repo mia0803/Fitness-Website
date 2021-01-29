@@ -1,0 +1,120 @@
+@charset "EUC-KR";
+
+html, body{
+	font-family: Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	top:0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.6;
+}
+
+p{
+	cursor: pointer;
+}
+
+h1{
+	margin: 10px;
+}
+
+input:read-only {
+  pointer-events: none;
+  border: none;
+  background: transparent;
+}
+
+.black-banner{
+	position: relative;
+	border: 2px solid black;
+	background-color: black;
+	text-align: left;
+	margin-top:0;
+	color: white;
+	width: auto;
+	height: 60px;
+}
+
+.vertical-center{
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	margin-left:10px;
+	cursor: pointer;
+}
+
+.body-box{ 
+	width: auto;
+	display: flex;
+	height: 100%;
+}
+
+.side-bar{
+	display: inline-block;
+	background: #d9d9d9;
+	min-width: 250px;
+	width: 250px; 
+	max-width: 250px;
+	padding: 20px;
+	margin-bottom:0;
+	height: auto;
+}
+
+.body-content{
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+
+.selected-page{
+	display: inline;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom:4px;
+	padding-right: 15px;
+	border-bottom: 2px solid #808080;
+}
+
+/* -------- member info ---------- */
+
+
+.profile-size{
+	width: 100px;
+	height: 100px;
+}
+
+.img-size{
+	width: 200px;
+	height: 150px;
+}
+
+/*---------- edit member */
+.member-update-btn, .change-membership-btn, .deactivate{
+	cursor: pointer;
+}
+
+.horz-center-box{
+	text-align: left;
+	padding: 20px;
+	width: 500px;
+	margin: auto;
+}
+
+.center{
+	text-align: center;
+	
+}
+
+.left-align{
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+
+
+
