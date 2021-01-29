@@ -1,4 +1,4 @@
-# Fitness website development and deployment
+# Fitness Website Development and Deployment
 
 * Period: Oct.2020 - Nov.2020
 * Purpose: Dynamic website backend development with Java and Oracle
