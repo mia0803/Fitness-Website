@@ -6,7 +6,7 @@
 * Functions: Registration, Login, Message Board, Dashboard, User Page, Class Cart, DML Statement
 * Outcomes: Website Deployment, Data Manipulation, Frontend Development, Asynchronous Operation
 
-* **Deployed Website: http://54.172.212.121:8080/fitnessProject/a-homepage/main.jsp
+*  ** Deployed Website: http://54.172.212.121:8080/fitnessProject/a-homepage/main.jsp
 
 =======Development Environment=======
 
@@ -20,7 +20,7 @@
 - Eclipse
 
 > Server (Deployed)
-- AWS(Amazon Web Server) EC2 clouding web server
+- AWS(Amazon Web Server) EC2 server
 
 > Web Application Server
 - Apache Tomcat 9.0
