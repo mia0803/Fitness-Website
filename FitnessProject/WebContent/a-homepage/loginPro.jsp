@@ -17,8 +17,8 @@ String pw = request.getParameter("pw");
 String remember = request.getParameter("remember");
 
 
-membersDAO dao = new membersDAO();
-membersDTO dto = dao.checkLogin(email, pw);
+MembersDAO dao = new MembersDAO();
+MembersDTO dto = dao.checkLogin(email, pw);
 
 int mem_id = dto.getId();
 

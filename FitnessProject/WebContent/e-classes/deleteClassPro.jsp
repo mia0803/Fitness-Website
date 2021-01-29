@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.classDAO" %>   
+<%@ page import="com.fitness.clubs.ClassDAO" %>   
 
 <!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@ color: black;
 <%
 
 String class_id = request.getParameter("class_id"); 
-classDAO dao = new classDAO();
+ClassDAO dao = new ClassDAO();
 dao.deleteClass(class_id);
 
 %>

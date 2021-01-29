@@ -49,8 +49,8 @@ if(!"admin".equals(user)){
 }
 
 
-classDAO dao = new classDAO();
-ArrayList<classDTO> classes = dao.getClasses();
+ClassDAO dao = new ClassDAO();
+ArrayList<ClassDTO> classes = dao.getClasses();
 
 %>
 
@@ -79,7 +79,7 @@ ArrayList<classDTO> classes = dao.getClasses();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(classDTO class1:classes){
+		for(ClassDTO class1:classes){
 			%>
 			<tr>
 			    <td><%=class1.getC_id() %></td>

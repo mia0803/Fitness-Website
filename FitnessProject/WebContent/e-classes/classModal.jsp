@@ -35,10 +35,10 @@ if(club_name == null){
 
 String user = (String)session.getAttribute("user");
 
-clubsDAO dao = new clubsDAO();
-clubsDTO club = dao.getClub(club_name);
+ClubsDAO dao = new ClubsDAO();
+ClubsDTO club = dao.getClub(club_name);
 
-classDAO cdao = new classDAO();
+ClassDAO cdao = new ClassDAO();
 int total_classes = cdao.getTotalCount(club_name);
 
 
@@ -151,8 +151,8 @@ if(sessionId!=null){
 		<div class="modal-body">
 			<table class="schedule-content" data-button="mon">
 				<%
-				ArrayList<classDTO> classes = cdao.getClasses(club_name, "mon");
-				for(classDTO class1:classes){ 
+				ArrayList<ClassDTO> classes = cdao.getClasses(club_name, "mon");
+				for(ClassDTO class1:classes){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -165,8 +165,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="tue">
 				<%
-				ArrayList<classDTO> classes2 = cdao.getClasses(club_name, "tue");
-				for(classDTO class1:classes2){ 
+				ArrayList<ClassDTO> classes2 = cdao.getClasses(club_name, "tue");
+				for(ClassDTO class1:classes2){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -179,8 +179,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="wed">
 				<%
-				ArrayList<classDTO> classes3 = cdao.getClasses(club_name, "wed");
-				for(classDTO class1:classes3){ 
+				ArrayList<ClassDTO> classes3 = cdao.getClasses(club_name, "wed");
+				for(ClassDTO class1:classes3){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -193,8 +193,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="thu">
 				<%
-				ArrayList<classDTO> classes4 = cdao.getClasses(club_name, "thu");
-				for(classDTO class1:classes4){ 
+				ArrayList<ClassDTO> classes4 = cdao.getClasses(club_name, "thu");
+				for(ClassDTO class1:classes4){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -207,8 +207,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="fri">
 				<%
-				ArrayList<classDTO> classes5 = cdao.getClasses(club_name, "fri");
-				for(classDTO class1:classes5){ 
+				ArrayList<ClassDTO> classes5 = cdao.getClasses(club_name, "fri");
+				for(ClassDTO class1:classes5){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -221,8 +221,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="sat">
 				<%
-				ArrayList<classDTO> classes6 = cdao.getClasses(club_name, "sat");
-				for(classDTO class1:classes6){ 
+				ArrayList<ClassDTO> classes6 = cdao.getClasses(club_name, "sat");
+				for(ClassDTO class1:classes6){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -235,8 +235,8 @@ if(sessionId!=null){
 			</table>
 			<table class="schedule-content" data-button="sun">
 				<%
-				ArrayList<classDTO> classes7 = cdao.getClasses(club_name, "sun");
-				for(classDTO class1:classes7){ 
+				ArrayList<ClassDTO> classes7 = cdao.getClasses(club_name, "sun");
+				for(ClassDTO class1:classes7){ 
 				%>
 				<tr>
 					<td class="schedule-tr bigger"><%=class1.getTitle() %></td>

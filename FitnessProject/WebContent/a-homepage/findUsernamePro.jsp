@@ -18,12 +18,12 @@ color: black;
 </head>
 <body>
 
-<jsp:useBean id="dto" class="com.fitness.members.membersDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.members.MembersDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 
 String email = dao.getEmail(dto.getPhone(),dto.getFname(),dto.getLname());
 

@@ -24,7 +24,7 @@ color: black;
 String email = request.getParameter("email");
 String phone = request.getParameter("phone");
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 String pw = dao.getPw(email, phone);
 
 if(pw!=null){

@@ -48,8 +48,8 @@ if(!"admin".equals(user)){
 }
 
 
-locationDAO dao = new locationDAO();
-ArrayList<locationDTO> locations = dao.getLocations();
+LocationDAO dao = new LocationDAO();
+ArrayList<LocationDTO> locations = dao.getLocations();
 
 %>
 
@@ -75,7 +75,7 @@ ArrayList<locationDTO> locations = dao.getLocations();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(locationDTO location:locations){
+		for(LocationDTO location:locations){
 			%>
 			<tr>
 			    <td><%=location.getLocation_id() %></td>

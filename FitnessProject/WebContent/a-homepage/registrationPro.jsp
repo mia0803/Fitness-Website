@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<jsp:useBean id="pdto" class="com.fitness.payment.paymentDTO"></jsp:useBean>
+<jsp:useBean id="pdto" class="com.fitness.payment.PaymentDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="pdto"/>
 
 <%
@@ -24,12 +24,12 @@
 String state = (String)session.getAttribute("state");
 String sessionId = (String)session.getAttribute("mem_id");
 
-paymentDAO pdao = new paymentDAO();
+PaymentDAO pdao = new PaymentDAO();
 
-membersDAO mdao = new membersDAO();
+MembersDAO mdao = new MembersDAO();
 
-transactionDAO tdao = new transactionDAO();
-transactionDTO tdto = new transactionDTO(); //empty
+TransactionDAO tdao = new TransactionDAO();
+TransactionDTO tdto = new TransactionDTO(); //empty
 
 
 
@@ -60,7 +60,7 @@ if(state == null){
 	
 	payment_info_id = pdao.getId(mem_id);
 	
-	membersDTO mdto = mdao.getMember(mem_id);
+	MembersDTO mdto = mdao.getMember(mem_id);
 	
 
 	tdto.setMember_id(mdto.getId());
@@ -85,7 +85,7 @@ if(state == null){
 	
 	int mem_id = Integer.parseInt(sessionId);
 	
-	membersDTO mdto = mdao.getMember(mem_id);
+	MembersDTO mdto = mdao.getMember(mem_id);
 	
 	str = (String)session.getAttribute("payment");
 	membership_payment = Integer.parseInt(str.substring(1, 4));

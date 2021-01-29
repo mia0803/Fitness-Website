@@ -20,7 +20,7 @@
 request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id="dto" class="com.fitness.members.membersDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.members.MembersDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
@@ -41,7 +41,7 @@ if(cookies != null){
 	}
 }
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 
 //received 9 parameters
 String str = null;
@@ -79,7 +79,7 @@ if(sessionId != null){
 
 if(sessionId != null && id==null){
 	// member changing membership & member who pays later
-	membersDTO dto1 = dao.getMember(mem_id);
+	MembersDTO dto1 = dao.getMember(mem_id);
 	str = dto1.getPayment();
 	membership_payment = Integer.parseInt(str.substring(1, 4));
 	final_payment = membership_payment + 100;

@@ -14,7 +14,7 @@ request.setCharacterEncoding("UTF-8");
 %>
 
 
-<jsp:useBean id="dto" class="com.fitness.qboard.qboardDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.qboard.BoardDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 
@@ -24,7 +24,7 @@ String s_announcement = request.getParameter("announcement");
 int announcement = Integer.parseUnsignedInt(s_announcement);
 dto.setAnnouncement(announcement);
 
-qboardDAO dao = new qboardDAO();
+BoardDAO dao = new BoardDAO();
 
 dao.addPost(dto);
 

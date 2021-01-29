@@ -71,8 +71,8 @@ if(!"admin".equals(user)){
 }
 
 
-membersDAO dao = new membersDAO();
-ArrayList<membersDTO> members = dao.getMembers();
+MembersDAO dao = new MembersDAO();
+ArrayList<MembersDTO> members = dao.getMembers();
 
 %>
 
@@ -108,7 +108,7 @@ ArrayList<membersDTO> members = dao.getMembers();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(membersDTO member:members){
+		for(MembersDTO member:members){
 			%>
 			<tr>
 			    <td><%=member.getId() %></td>

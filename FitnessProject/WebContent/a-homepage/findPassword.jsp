@@ -30,7 +30,7 @@ color: black;
 			Phone: <input type="text" name="phone" required><br/>
 		</div>
 		<div>
-			<input type="submit" name="Submit">
+			<input type="submit" value="Submit">
 		</div>
 	</div>
 </form>

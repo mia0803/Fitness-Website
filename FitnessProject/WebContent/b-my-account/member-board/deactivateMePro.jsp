@@ -18,7 +18,7 @@ if(sid != null){
 	id = Integer.parseInt(sid);
 }
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 dao.deactivateMember(id);
 
 

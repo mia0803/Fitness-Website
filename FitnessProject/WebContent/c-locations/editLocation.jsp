@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.locationDAO" %>
-<%@ page import="com.fitness.clubs.locationDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
     
 <%
 
 String loc_name = request.getParameter("location"); 
-locationDAO dao = new locationDAO();
-locationDTO location = dao.getLocation(loc_name);
+LocationDAO dao = new LocationDAO();
+LocationDTO location = dao.getLocation(loc_name);
 
 
 %>

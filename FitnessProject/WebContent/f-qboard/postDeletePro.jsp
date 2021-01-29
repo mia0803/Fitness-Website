@@ -14,7 +14,7 @@
 
 String post_sid = request.getParameter("post_id");
 
-qboardDAO dao = new qboardDAO();
+BoardDAO dao = new BoardDAO();
 
 if(post_sid!=null){
 	int post_id = Integer.parseInt(post_sid);

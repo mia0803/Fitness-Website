@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.classDAO" %>
-<%@ page import="com.fitness.clubs.classDTO" %> 
+<%@ page import="com.fitness.clubs.*" %> 
     
 <!DOCTYPE html>
 <html>
@@ -22,12 +21,12 @@ color: black;
 request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id="dto" class="com.fitness.clubs.classDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.clubs.ClassDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
 
-classDAO dao = new classDAO();
+ClassDAO dao = new ClassDAO();
 // no same day, time, teacher
 boolean result = dao.check(dto);
 if(!result){

@@ -48,8 +48,8 @@ if(!"admin".equals(user)){
 	<%
 }
 
-clubsDAO dao = new clubsDAO();
-ArrayList<clubsDTO> clubs = dao.getClubs();
+ClubsDAO dao = new ClubsDAO();
+ArrayList<ClubsDTO> clubs = dao.getClubs();
 
 %>
 
@@ -75,7 +75,7 @@ ArrayList<clubsDTO> clubs = dao.getClubs();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(clubsDTO club:clubs){
+		for(ClubsDTO club:clubs){
 			%>
 			<tr>
 			    <td><%=club.getId() %></td>

@@ -61,10 +61,10 @@ if(!"admin".equals(user)){
 	<%
 }
 
-
-transactionDAO dao = new transactionDAO();
-ArrayList<transactionDTO> transactions = dao.getTransactions();
+TransactionDAO dao = new TransactionDAO();
+ArrayList<TransactionDTO> transactions = dao.getTransactions();
 %>
+
 
 <div class="black-banner" style="width:100%">
 	<h2 class="vertical-center go-to-main">Starry Fitness</h2>
@@ -90,7 +90,7 @@ ArrayList<transactionDTO> transactions = dao.getTransactions();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(transactionDTO transaction:transactions){
+		for(TransactionDTO transaction:transactions){
 			%>
 			<tr>
 			    <td><%=transaction.getId() %></td>

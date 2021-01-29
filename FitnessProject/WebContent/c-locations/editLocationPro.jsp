@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.locationDAO" %>
-<%@ page import="com.fitness.clubs.locationDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
 <%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
 <%@ page import="com.oreilly.servlet.MultipartRequest" %>
 
@@ -28,8 +27,8 @@ int size = 1024*1024*10;  // 10mb, to set maximum size
 String src = getServletContext().getRealPath("z-temp-img");
 MultipartRequest mr = new MultipartRequest(request, src, size, "UTF-8", new DefaultFileRenamePolicy());
 
-locationDAO dao = new locationDAO();
-locationDTO dto = new locationDTO();
+LocationDAO dao = new LocationDAO();
+LocationDTO dto = new LocationDTO();
 dto.setLocation_id(Integer.parseInt(mr.getParameter("id")));
 dto.setLocation(mr.getParameter("location"));
 dto.setLoc_desc(mr.getParameter("desc"));

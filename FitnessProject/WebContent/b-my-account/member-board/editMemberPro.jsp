@@ -30,7 +30,7 @@ MultipartRequest mr = new MultipartRequest(request, src, size, "UTF-8", new Defa
 
 
 
-membersDTO dto = new membersDTO();
+MembersDTO dto = new MembersDTO();
 
 dto.setId(Integer.parseInt(mr.getParameter("id")));
 dto.setPw(mr.getParameter("pw"));
@@ -51,7 +51,7 @@ if(profile != null){
 
 dto.setProfile(sysname);
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 dao.updateMember(dto);
 
 

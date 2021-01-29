@@ -52,8 +52,8 @@ if(!"member".equals(user)){
 
 int mem_id = Integer.parseInt(sessionId);
 
-paymentDAO dao = new paymentDAO();
-paymentDTO payment_info = dao.getPaymentInfo(mem_id);
+PaymentDAO dao = new PaymentDAO();
+PaymentDTO payment_info = dao.getPaymentInfo(mem_id);
 
 
 %>

@@ -24,7 +24,7 @@ color: black;
 String email = request.getParameter("email");
 String pw = request.getParameter("pw");
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 dao.updatePw(email, pw);
 
 

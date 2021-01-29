@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.locationDAO" %>
+<%@ page import="com.fitness.clubs.LocationDAO" %>
     
 <!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@ color: black;
 <%
 
 String location = request.getParameter("location"); 
-locationDAO dao = new locationDAO();
+LocationDAO dao = new LocationDAO();
 
 
 boolean result = dao.checkDelete(location);

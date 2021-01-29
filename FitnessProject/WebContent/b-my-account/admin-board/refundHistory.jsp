@@ -58,8 +58,8 @@ if(!"admin".equals(user)){
 	<%
 }
 
-refundDAO dao = new refundDAO();
-ArrayList<refundDTO> refund_records = dao.getRefundHistory();
+RefundDAO dao = new RefundDAO();
+ArrayList<RefundDTO> refund_records = dao.getRefundHistory();
 
 %>
 
@@ -85,7 +85,7 @@ ArrayList<refundDTO> refund_records = dao.getRefundHistory();
 			    <th>Refund Date</th>
 			 </tr>
 		<%
-		for(refundDTO record:refund_records){
+		for(RefundDTO record:refund_records){
 			%>
 			<tr>
 			    <td><%=record.getId() %></td>

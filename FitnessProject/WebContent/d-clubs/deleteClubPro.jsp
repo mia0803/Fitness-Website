@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.clubsDAO" %>    
+<%@ page import="com.fitness.clubs.ClubsDAO" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +21,7 @@ color: black;
 <%
 
 String name = request.getParameter("name"); 
-clubsDAO dao = new clubsDAO();
+ClubsDAO dao = new ClubsDAO();
 
 boolean result = dao.checkDelete(name);
 if(!result){

@@ -15,7 +15,7 @@
 String comment_sid = request.getParameter("comment_id");
 String post_id = request.getParameter("post_id");
 
-commentDAO dao = new commentDAO();
+CommentDAO dao = new CommentDAO();
 
 if(comment_sid!=null){
 	int comment_id = Integer.parseInt(comment_sid);

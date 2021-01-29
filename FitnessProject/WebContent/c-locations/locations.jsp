@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.locationDAO" %>
-<%@ page import="com.fitness.clubs.locationDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
 <%@ page import="java.util.ArrayList" %>
 
 
@@ -35,9 +34,9 @@ if(cookies != null){
 
 String user = (String)session.getAttribute("user");
 
-locationDAO dao = new locationDAO();
+LocationDAO dao = new LocationDAO();
 int total_n = dao.getClubCount();
-ArrayList<locationDTO> locations = dao.getLocations();
+ArrayList<LocationDTO> locations = dao.getLocations();
 
 String sessionId = (String)session.getAttribute("mem_id");
 
@@ -68,7 +67,7 @@ if(sessionId!=null){
 		%>
 		</div>
 		<% 
-		for(locationDTO location:locations){
+		for(LocationDTO location:locations){
 			int branch_n = dao.getBranch_n(location.getLocation());	
 		%> 
 		<div class="top-align">

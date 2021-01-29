@@ -7,7 +7,7 @@
 
 String email = request.getParameter("email");
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 boolean result = dao.emailValidation(email);
 
 String comment = null;

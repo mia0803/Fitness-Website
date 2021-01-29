@@ -64,7 +64,7 @@ int posts_on_page = 5;
 
 //========================================
 
-qboardDAO dao = new qboardDAO();
+BoardDAO dao = new BoardDAO();
 
 String s_currunt_page = request.getParameter("currunt_page");
 int currunt_page = 1;
@@ -111,14 +111,14 @@ if(currunt_page>buttons_on_page){
 
 
 
-ArrayList<qboardDTO> posts = null;
+ArrayList<BoardDTO> posts = null;
 if(content!=null){
 	posts = dao.getPosts(start, end, content);
 } else{
 	posts = dao.getPosts(start, end);
 }
 
-commentDAO cdao = new commentDAO();
+CommentDAO cdao = new CommentDAO();
 
 %>
 
@@ -150,7 +150,7 @@ if(email!=null){
 				<th class="view">View</th>
 			</tr>
 			<%
-			for(qboardDTO post:posts){
+			for(BoardDTO post:posts){
 				int post_comment = cdao.getCommentCount(post.getId());
 				if(post.getAnnouncement()==1){
 			%>

@@ -59,7 +59,7 @@ if(!"member".equals(user)){
 	<%
 }
 
-classCartDAO dao = new classCartDAO();
+ClassCartDAO dao = new ClassCartDAO();
 
 
 Calendar cal = Calendar.getInstance();
@@ -105,8 +105,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes = dao.getClassInfo(mem_id, "mon");
-					for(classCartDTO class1:classes){ 
+					ArrayList<ClassCartDTO> classes = dao.getClassInfo(mem_id, "mon");
+					for(ClassCartDTO class1:classes){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -126,8 +126,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes2 = dao.getClassInfo(mem_id, "tue");
-					for(classCartDTO class1:classes2){ 
+					ArrayList<ClassCartDTO> classes2 = dao.getClassInfo(mem_id, "tue");
+					for(ClassCartDTO class1:classes2){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -147,8 +147,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes3 = dao.getClassInfo(mem_id, "wed");
-					for(classCartDTO class1:classes3){ 
+					ArrayList<ClassCartDTO> classes3 = dao.getClassInfo(mem_id, "wed");
+					for(ClassCartDTO class1:classes3){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -168,8 +168,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes4 = dao.getClassInfo(mem_id, "thu");
-					for(classCartDTO class1:classes4){ 
+					ArrayList<ClassCartDTO> classes4 = dao.getClassInfo(mem_id, "thu");
+					for(ClassCartDTO class1:classes4){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -189,8 +189,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes5 = dao.getClassInfo(mem_id, "fri");
-					for(classCartDTO class1:classes5){ 
+					ArrayList<ClassCartDTO> classes5 = dao.getClassInfo(mem_id, "fri");
+					for(ClassCartDTO class1:classes5){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -210,8 +210,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes6 = dao.getClassInfo(mem_id, "sat");
-					for(classCartDTO class1:classes6){ 
+					ArrayList<ClassCartDTO> classes6 = dao.getClassInfo(mem_id, "sat");
+					for(ClassCartDTO class1:classes6){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>
@@ -231,8 +231,8 @@ String today = Today.toLowerCase();
 					    <th>Function</th>
 					</tr>
 					<%
-					ArrayList<classCartDTO> classes7 = dao.getClassInfo(mem_id, "sun");
-					for(classCartDTO class1:classes7){ 
+					ArrayList<ClassCartDTO> classes7 = dao.getClassInfo(mem_id, "sun");
+					for(ClassCartDTO class1:classes7){ 
 					%>
 					<tr>
 						<td class="schedule-tr bigger"><%=class1.getTitle() %></td>

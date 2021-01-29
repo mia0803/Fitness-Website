@@ -62,8 +62,8 @@ if(!"admin".equals(user)){
 	<%
 }
 
-membersDAO dao = new membersDAO();
-ArrayList<membersDTO> teachers = dao.getTeachers();
+MembersDAO dao = new MembersDAO();
+ArrayList<MembersDTO> teachers = dao.getTeachers();
 %>
 
 <div class="black-banner" style="width:100%">
@@ -92,7 +92,7 @@ ArrayList<membersDTO> teachers = dao.getTeachers();
 			    <th>Function</th>
 			 </tr>
 		<%
-		for(membersDTO teacher:teachers){
+		for(MembersDTO teacher:teachers){
 			%>
 			<tr>
 			    <td><%=teacher.getId() %></td>

@@ -1,14 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.clubsDAO" %>
-<%@ page import="com.fitness.clubs.clubsDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
     
 <%
 // club info edit page
 
 String name = request.getParameter("name"); 
-clubsDAO dao = new clubsDAO();
-clubsDTO club = dao.getClub(name);
+ClubsDAO dao = new ClubsDAO();
+ClubsDTO club = dao.getClub(name);
 
 
 %>

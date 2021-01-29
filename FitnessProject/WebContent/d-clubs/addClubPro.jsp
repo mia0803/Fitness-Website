@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.clubsDAO" %>
-<%@ page import="com.fitness.clubs.clubsDTO" %> 
+<%@ page import="com.fitness.clubs.*" %> 
 <%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
 <%@ page import="com.oreilly.servlet.MultipartRequest" %>    
     
@@ -32,12 +31,12 @@ MultipartRequest mr = new MultipartRequest(request, src, size, "UTF-8", new Defa
 
 
 
-clubsDAO dao = new clubsDAO();
+ClubsDAO dao = new ClubsDAO();
 boolean result = dao.checkClub(mr.getParameter("name"));
 
 if(!result){
 	
-	clubsDTO dto = new clubsDTO();
+	ClubsDTO dto = new ClubsDTO();
 	dto.setName(mr.getParameter("name"));
 	dto.setAddress(mr.getParameter("address"));
 	dto.setPhone(mr.getParameter("phone"));

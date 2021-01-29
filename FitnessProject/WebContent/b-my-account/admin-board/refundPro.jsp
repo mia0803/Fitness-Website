@@ -15,7 +15,7 @@
 String sid = request.getParameter("id");
 int transaction_id = Integer.parseInt(sid);
 
-transactionDAO dao = new transactionDAO();
+TransactionDAO dao = new TransactionDAO();
 dao.refund(transaction_id);
 
 

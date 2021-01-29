@@ -11,7 +11,7 @@
 
 <% request.setCharacterEncoding("UTF-8"); %>
 
-<jsp:useBean id="dto" class="com.fitness.qboard.commentDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.qboard.CommentDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
@@ -22,7 +22,7 @@ dto.setPost_id(post_id);
 
 String action = request.getParameter("action");
 
-commentDAO dao = new commentDAO();
+CommentDAO dao = new CommentDAO();
 
 if(action.equals("comment")){
 	dao.addComment(dto);

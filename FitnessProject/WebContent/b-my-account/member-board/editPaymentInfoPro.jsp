@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<jsp:useBean id="dto" class="com.fitness.payment.paymentDTO" ></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.payment.PaymentDTO" ></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
-paymentDAO dao = new paymentDAO(); 
+PaymentDAO dao = new PaymentDAO(); 
 dao.update(dto);
 
 

@@ -53,8 +53,8 @@ if(!"member".equals(user)){
 
 int mem_id = Integer.parseInt(sessionId);
 
-membersDAO dao = new membersDAO();
-membersDTO member = dao.getMember(mem_id);
+MembersDAO dao = new MembersDAO();
+MembersDTO member = dao.getMember(mem_id);
 
 
 %>

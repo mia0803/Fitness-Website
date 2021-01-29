@@ -34,7 +34,7 @@ color: black;
 			Phone number: <input type="text" name="phone"><br/>
 		</div>
 		<div>
-			<input type="submit" name="Submit">
+			<input type="submit" value="Submit">
 		</div>
 	</div>
 </form>

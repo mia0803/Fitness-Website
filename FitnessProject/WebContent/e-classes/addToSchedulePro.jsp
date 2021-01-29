@@ -27,7 +27,7 @@ int class_id = Integer.parseInt(sid);
 String member_sid = (String)session.getAttribute("mem_id");
 int member_id = Integer.parseInt(member_sid);
 
-classCartDAO dao = new classCartDAO();
+ClassCartDAO dao = new ClassCartDAO();
 boolean result = dao.checkExistance(class_id, member_id); 
 
 if(!result){

@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.clubsDAO" %> 
-<%@ page import="com.fitness.clubs.clubsDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
 <%@ page import="java.util.ArrayList" %>      
 <!DOCTYPE html>
 <html>
@@ -16,7 +15,7 @@
 
 <%
 
-clubsDAO dao = new clubsDAO();
+ClubsDAO dao = new ClubsDAO();
 
 String state = request.getParameter("state");
 
@@ -67,9 +66,9 @@ if(state != null){
 		
 		<div class="modal-body">
 		<%
-		ArrayList<clubsDTO> clubs = dao.getClubs();
+		ArrayList<ClubsDTO> clubs = dao.getClubs();
 		
-		for(clubsDTO club:clubs){
+		for(ClubsDTO club:clubs){
 			%>
 			<div class="large-box <%=club.getLocation() %>">
 				<p class="header club"><%=club.getName() %></p>

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<jsp:useBean id="dto" class="com.fitness.qboard.qboardDTO"></jsp:useBean>
+<jsp:useBean id="dto" class="com.fitness.qboard.BoardDTO"></jsp:useBean>
 <jsp:setProperty property="*" name="dto"/>
 
 <%
@@ -22,7 +22,7 @@ if(sid!= null){
 
 dto.setId(id);
 
-qboardDAO dao = new qboardDAO();
+BoardDAO dao = new BoardDAO();
 dao.updatePost(dto);
 
 %>

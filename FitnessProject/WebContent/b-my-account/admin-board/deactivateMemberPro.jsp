@@ -30,7 +30,7 @@ if(sid != null){
 
 String state = request.getParameter("state");
 
-membersDAO dao = new membersDAO();
+MembersDAO dao = new MembersDAO();
 
 
 

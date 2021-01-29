@@ -65,13 +65,13 @@ if(post_sid != null){
 	return;
 }
 
-qboardDAO dao = new qboardDAO();
+BoardDAO dao = new BoardDAO();
 dao.upView(post_id);
 
-qboardDTO post = dao.getPost(post_id);
+BoardDTO post = dao.getPost(post_id);
 
-commentDAO cdao = new commentDAO();
-ArrayList<commentDTO> comments = cdao.getComment(post_id);
+CommentDAO cdao = new CommentDAO();
+ArrayList<CommentDTO> comments = cdao.getComment(post_id);
 
 %>
 
@@ -154,7 +154,7 @@ if(email!=null){
 			</div>
 			
 			<%
-			for(commentDTO comment: comments){
+			for(CommentDTO comment: comments){
 				if(comment.getReply()==0){
 			//===== read comment
 			%>

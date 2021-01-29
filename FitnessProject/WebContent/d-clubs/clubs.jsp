@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.fitness.clubs.clubsDAO" %>
-<%@ page import="com.fitness.clubs.clubsDTO" %>
+<%@ page import="com.fitness.clubs.*" %>
 <%@ page import="java.util.ArrayList" %>
 
 
@@ -41,9 +40,9 @@ if(location == null){
 
 String user = (String)session.getAttribute("user");
 
-clubsDAO dao = new clubsDAO();
+ClubsDAO dao = new ClubsDAO();
 int total_n = dao.getClubCount(location);
-ArrayList<clubsDTO> clubs = dao.getClubs(location);
+ArrayList<ClubsDTO> clubs = dao.getClubs(location);
 
 String sessionId = (String)session.getAttribute("mem_id");
 
@@ -75,7 +74,7 @@ if(sessionId!=null){
 		%>
 		</div>
 		<% 
-		for(clubsDTO club:clubs){	
+		for(ClubsDTO club:clubs){	
 		%> 
 		<div class="top-align">
 			<div class="content-box club-box" id="<%=club.getName() %>">
